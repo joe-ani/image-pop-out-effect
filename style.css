@@ -1,0 +1,55 @@
+body {
+    background: #2e2e30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.person {
+    position: relative;
+    max-width: 20rem;
+    margin-inline: auto;
+}
+
+
+.person-container {
+    aspect-ratio: 1/1.3;
+    width: 250px;
+    display: flex;
+    align-items: end;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+    transition: scale 200ms ease-in-out;
+}
+
+.circle {
+    position: absolute;
+    width: 250px;
+    height: 250px ;
+    background: pink;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    inset: auto 0 0;
+    margin-inline: auto;
+    border-radius: 200px;
+}
+
+.person-img {
+    position: relative;
+    transform: scale(1.7) translateY(-45px);
+    transition: transform 200ms ease-in-out;
+}
+
+
+.person-container:hover {
+  scale: 1.09;
+}
+.person-container:hover .person-img{
+  transform: scale(1.8) translateY(-55px);
+}
